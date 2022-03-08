@@ -18,7 +18,8 @@ var userSchema = new Schema(
             minlenght: 5,
             required: true
         }
-    }, { 
+    }, 
+    { 
         timestamps: true 
     }
 );
