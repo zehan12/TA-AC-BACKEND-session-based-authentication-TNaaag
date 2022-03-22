@@ -1,0 +1,10 @@
+body
+form(action='/users/register', method='POST')
+    p
+    | Name: 
+    input(type='text', name='name', value='')
+    |          Email: 
+    input(type='text', name='email', value='')
+    |          Password: 
+    input(type='password', name='password', value='')
+    input(type='submit', value='Submit')
