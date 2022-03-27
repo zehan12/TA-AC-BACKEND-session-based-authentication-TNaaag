@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+<main>
+    <form action="/users/register" method="POST" >
+        <h2 class="red"><%= message %></h2>
+        <label for="name">Name:</label><br>
+        <input type="text" id="fname" name="name" placeholder="Enter your name"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="lname" name="email" placeholder="Enter your email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="lname" name="password" placeholder="Enter your password"><br>
+        <label for="secret">Secret Code:</label><br>
+        <input type="password" id="lname" name="SECRET" placeholder="Enter your code"><br>
+        <input type="submit" value="Submit">
+    </form> 
+</main>
