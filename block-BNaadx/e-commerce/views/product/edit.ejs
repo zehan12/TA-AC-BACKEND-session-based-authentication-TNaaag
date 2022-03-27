@@ -1,0 +1,13 @@
+<%- include('../partials/header.ejs') %>
+<main>
+    <form action="/product/<%= product.submit %>/edit" method="POST" enctype="multipart/form-data">
+        <label for="name">Name of the product:</label><br>
+        <input type="text" id="name" name="name" placeholder="<%= product.name %>"><br>
+        <label for="Qunatity">Quantity:</label><br>
+        <input type="text" id="qty" name="quantiy" placeholder="<%= product.quantiy %>"><br>
+        <label for="Price">Enter Price:</label><br>
+        <input type="number" id="price" name="price" placeholder="<%= product.price %>"><br>
+        <input type="file" name="avatar" placeholder="<%= product.cover_image %>" /><br>
+        <input type="submit" value="submit">
+    </form>
+</main>
